@@ -33,15 +33,15 @@ app.get('/', (request, response) => {
 
 app.get('/about', (req, res) => {
 //   console.log(req.query)
-  res.render('about', { navbar: true })
+  res.render('about', {navbar:true} ) 
 })
 
 app.get('/work', (req, res) => {
-    res.render('work', {navbar: true})
+    res.render('work', {navbar:true} )
 })
 
 app.get('/photo', (req, res) => {
-  res.render('photo', {navbar: true})
+  res.render('photo', {navbar:true} )
 })
 
 app.get('*', (req, res) => {
