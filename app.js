@@ -1,21 +1,13 @@
-/**
- * Require express function
- */
+
 const express = require('express')
-/**
- * Require hbs
- */
+
 const hbs = require('hbs')
 
-/**
- * Create the app object
- */
+
 const app = express()
 
-/**
- * Setup time!
- */
-// We need to define where the static files are
+
+// define where the static files are
 app.use(express.static(`${__dirname}/public`))
 // Register hbs partials
 app.set('view engine', 'hbs')
